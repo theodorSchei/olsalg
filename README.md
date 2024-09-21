@@ -14,9 +14,9 @@ Mangler å ta høyde for valgdagen. Kjedelig at ikke det er en fast dato gitt. E
 - Onsdag før skjærtorsdag kl. 09:00–18:00
 - Påskeaften kl 09:00–16:00
 - Dagen før 1. mai - ordinære salgstider
-- 1. mai - ikke ølsalg
+- 1\. mai - ikke ølsalg
 - Dagen før 17. mai - ordinære salgstider
-- 17. mai - ikke ølsalg
+- 17\. mai - ikke ølsalg
 - Dagen før Kristi Himmelfartsdag - ordinære salgstider
 - Pinseaften kl. 09:00–16:00
 - Julaften kl. 09:00–16:00 (ikke på søndager)
