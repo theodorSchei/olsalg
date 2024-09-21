@@ -4,6 +4,17 @@ main = "src/index.ts"
 compatibility_date = "2024-09-19"
 compatibility_flags = ["nodejs_compat"]
 
+[triggers]
+crons = [
+  # # At 19:00 on every day-of-week from Monday through Friday
+  # "0 19 * * 1-5",
+  # # At 17:00 on Saturday
+  # "0 17 * * 6",
+
+  # At 16:00 every day
+  "0 16 * * *"
+]
+
 # Automatically place your workloads in an optimal location to minimize latency.
 # If you are running back-end logic in a Worker, running it closer to your back-end infrastructure
 # rather than the end user may result in better performance.
