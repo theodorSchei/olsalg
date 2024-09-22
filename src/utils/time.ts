@@ -18,6 +18,10 @@ import { DateTime } from 'luxon';
  *  Valgdagen kl. 09:00–20:00 (ikke på søndager)
  */
 export function getClosingTime(date: DateTime): DateTime | null {
+
+	// Søndager og helligdager - ikke ølsalg
+	if (date.weekday === 7 || isHoliday(date)) return null;
+
 	// Spesialdager
 	// Onsdag før skjærtorsdag kl. 09:00–18:00
 	if (isWednesdayBeforeMaundyThursday(date)) return date.set({ hour: 18, minute: 0 });
@@ -59,8 +63,6 @@ export function getClosingTime(date: DateTime): DateTime | null {
 	// Lørdager kl. 09:00–18:00
 	if (date.weekday === 6) return date.set({ hour: 18, minute: 0 });
 
-	// Søndager og helligdager - ikke ølsalg
-	if (date.weekday === 7 || isHoliday(date)) return null;
 	return null; // No ølsalg
 }
 

@@ -3,7 +3,7 @@
 exports[`Ølsalg-reminder > should match snapshot 1`] = `
 [
   "---2024-01-01---",
-  "Ølsalget stenger kl. <t:1704135600:t>! (<t:1704135600:R>)",
+  "Det er ikke ølsalg i dag (1. Nyttårsdag)",
   "---2024-01-02---",
   "Ølsalget stenger kl. <t:1704222000:t>! (<t:1704222000:R>)",
   "---2024-01-03---",
@@ -176,19 +176,22 @@ exports[`Ølsalg-reminder > should match snapshot 1`] = `
   "Ølsalget stenger kl. <t:1711479600:t>! (<t:1711479600:R>)
 @everyone **NB!⚠️** I morgen stenger ølsalget kl. <t:1711558800:t> (Onsdag før skjærtorsdag)",
   "---2024-03-27---",
-  "Ølsalget stenger kl. <t:1711558800:t>! (<t:1711558800:R>)",
+  "Ølsalget stenger kl. <t:1711558800:t>! (<t:1711558800:R>)
+**NB!⚠️** Det er ikke ølsalg i morgen (Skjærtorsdag)",
   "---2024-03-28---",
-  "Ølsalget stenger kl. <t:1711652400:t>! (<t:1711652400:R>)",
+  "Det er ikke ølsalg i dag (Skjærtorsdag)
+**NB!⚠️** Det er ikke ølsalg i morgen (Langfredag)",
   "---2024-03-29---",
-  "Ølsalget stenger kl. <t:1711738800:t>! (<t:1711738800:R>)
+  "Det er ikke ølsalg i dag (Langfredag)
 @everyone **NB!⚠️** I morgen stenger ølsalget kl. <t:1711810800:t> (Påskeaften)",
   "---2024-03-30---",
   "Ølsalget stenger kl. <t:1711810800:t>! (<t:1711810800:R>)
 **NB!⚠️** Det er ikke ølsalg i morgen (1. påskedag)",
   "---2024-03-31---",
-  "Det er ikke ølsalg i dag (1. påskedag)",
+  "Det er ikke ølsalg i dag (1. påskedag)
+**NB!⚠️** Det er ikke ølsalg i morgen (2. påskedag)",
   "---2024-04-01---",
-  "Ølsalget stenger kl. <t:1711994400:t>! (<t:1711994400:R>)",
+  "Det er ikke ølsalg i dag (2. påskedag)",
   "---2024-04-02---",
   "Ølsalget stenger kl. <t:1712080800:t>! (<t:1712080800:R>)",
   "---2024-04-03---",
@@ -263,9 +266,10 @@ exports[`Ølsalg-reminder > should match snapshot 1`] = `
   "---2024-05-07---",
   "Ølsalget stenger kl. <t:1715104800:t>! (<t:1715104800:R>)",
   "---2024-05-08---",
-  "Ølsalget stenger kl. <t:1715191200:t>! (<t:1715191200:R>)",
+  "Ølsalget stenger kl. <t:1715191200:t>! (<t:1715191200:R>)
+**NB!⚠️** Det er ikke ølsalg i morgen (Kristi himmelfartsdag)",
   "---2024-05-09---",
-  "Ølsalget stenger kl. <t:1715277600:t>! (<t:1715277600:R>)",
+  "Det er ikke ølsalg i dag (Kristi himmelfartsdag)",
   "---2024-05-10---",
   "Ølsalget stenger kl. <t:1715364000:t>! (<t:1715364000:R>)",
   "---2024-05-11---",
@@ -288,9 +292,10 @@ exports[`Ølsalg-reminder > should match snapshot 1`] = `
   "Ølsalget stenger kl. <t:1716040800:t>! (<t:1716040800:R>)
 **NB!⚠️** Det er ikke ølsalg i morgen (1. pinsedag)",
   "---2024-05-19---",
-  "Det er ikke ølsalg i dag (1. pinsedag)",
+  "Det er ikke ølsalg i dag (1. pinsedag)
+**NB!⚠️** Det er ikke ølsalg i morgen (2. pinsedag)",
   "---2024-05-20---",
-  "Ølsalget stenger kl. <t:1716228000:t>! (<t:1716228000:R>)",
+  "Det er ikke ølsalg i dag (2. pinsedag)",
   "---2024-05-21---",
   "Ølsalget stenger kl. <t:1716314400:t>! (<t:1716314400:R>)",
   "---2024-05-22---",
@@ -727,11 +732,13 @@ exports[`Ølsalg-reminder > should match snapshot 1`] = `
   "Ølsalget stenger kl. <t:1734980400:t>! (<t:1734980400:R>)
 @everyone **NB!⚠️** I morgen stenger ølsalget kl. <t:1735052400:t> (Julaften)",
   "---2024-12-24---",
-  "Ølsalget stenger kl. <t:1735052400:t>! (<t:1735052400:R>)",
+  "Ølsalget stenger kl. <t:1735052400:t>! (<t:1735052400:R>)
+**NB!⚠️** Det er ikke ølsalg i morgen (1. juledag)",
   "---2024-12-25---",
-  "Ølsalget stenger kl. <t:1735153200:t>! (<t:1735153200:R>)",
+  "Det er ikke ølsalg i dag (1. juledag)
+**NB!⚠️** Det er ikke ølsalg i morgen (2. juledag)",
   "---2024-12-26---",
-  "Ølsalget stenger kl. <t:1735239600:t>! (<t:1735239600:R>)",
+  "Det er ikke ølsalg i dag (2. juledag)",
   "---2024-12-27---",
   "Ølsalget stenger kl. <t:1735326000:t>! (<t:1735326000:R>)",
   "---2024-12-28---",
