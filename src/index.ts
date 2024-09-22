@@ -46,7 +46,7 @@ export function makeTodaysMessage(): string {
 	if (!closingTime) {
 		message += `Det er ikke ølsalg i dag (${getHolidayName(now) ?? 'Søndag'})`;
 	} else {
-		message += `Ølsalget stenger kl. ${convertToDiscordTimestamp(
+		message += `🍻 Ølsalget stenger kl. ${convertToDiscordTimestamp(
 			closingTime,
 			DiscordTimestampStyle.ShortTime
 		)}! (${convertToDiscordTimestamp(closingTime, DiscordTimestampStyle.RelativeTime)})`;
