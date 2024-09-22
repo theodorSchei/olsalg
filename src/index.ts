@@ -54,16 +54,20 @@ export function makeTodaysMessage(): string {
 
 	const tomorrow = now.plus({ days: 1 });
 	const tomorrowClosingTime = getClosingTime(tomorrow);
+	const tomorrowHolidayName = getHolidayName(tomorrow);
 
 	if (!isRegularØlsalgDay(tomorrow)) {
 		// Irregular closing time
 		if (tomorrowClosingTime) {
-			message += `\n**NB!⚠️** I morgen stenger ølsalget kl. ${convertToDiscordTimestamp(
+			message += `\n@everyone **NB!⚠️** I morgen stenger ølsalget kl. ${convertToDiscordTimestamp(
 				tomorrowClosingTime,
 				DiscordTimestampStyle.ShortTime
-			)} (${getHolidayName(tomorrow)})`;
+			)} (${tomorrowHolidayName ?? 'Søndag'})`;
 		} else {
-			message += `\n**NB!⚠️** Det er ikke ølsalg i morgen (${getHolidayName(tomorrow) ?? 'Søndag'})`;
+			// No ølsalg for some other reason than sunday
+			if (tomorrowHolidayName) {
+				message += `\n**NB!⚠️** Det er ikke ølsalg i morgen (${tomorrowHolidayName})`;
+			}
 		}
 	}
 

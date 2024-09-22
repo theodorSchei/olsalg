@@ -108,7 +108,6 @@ export function getHolidayName(date: DateTime): string | null {
 	if (date.month === 12 && date.day === 25) return '1. juledag';
 	if (date.month === 12 && date.day === 26) return '2. juledag';
 	if (date.month === 12 && date.day === 31) return 'Nyttårsaften';
-	if (date.weekday === 7) return 'Søndag';
 	return null;
 }
 
